@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title>Timer</title>
+   <link rel="stylesheet" href="./css/estilos.css"></link>
+</head>
+<body>
+    <form class="timer" id="timer">
+         <h1 class="timer-title"></h1>
+       <div class="timer-name">
+           <input type="text" class="timer-name__input" placeholder="Descripción del timer" id="timerName" />
+        </div>
+        <div class="timer-range">
+           <div class="timer-range__item"> 
+              <label class="timer-range__item-label">H</label>
+              <input type="number" value="0" min="0" max="59" class="timer-range__item-input" id="timerHours" />
+           </div>
+           <div class="timer-range__item"> 
+              <label class="timer-range__item-label">M</label>
+              <input type="number" value="0" min="0" max="59" class="timer-range__item-input" id="timerMinutes" />
+           </div>
+           <div class="timer-range__item"> 
+              <label class="timer-range__item-label">S</label>
+              <input type="number" value="0" min="0" max="59" class="timer-range__item-input" id="timerSeconds" />
+           </div>
+        </div>
+       <div class="timer-confirm">
+          <button type="submit" class="timer-range__button">Crear</button>
+       </div>
+        
+    </form>
+   <div class="timer-list"></div>
+
+   <script src="./js/app.js"></script>
+</body>    
+</html>
